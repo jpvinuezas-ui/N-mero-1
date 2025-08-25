@@ -1,25 +1,38 @@
-// Agenda de siembras/cosechas
-const harvests = [
-  {site:"MARCOR 1A – San Pablo (Pacoa)", sow:"07 de cada mes", size:"70 MM", harvest:"22 al 24"},
-  {site:"MARCOR 1B – Ballenita", sow:"28 de cada mes", size:"70 MM", harvest:"16 al 18"},
-  {site:"Pelícano A – Ballenita", sow:"21 de cada mes", size:"25 MM", harvest:"09 al 10"},
-  {site:"Pelícano B – Ballenita", sow:"21 de cada mes", size:"35 MM", harvest:"09 al 10"},
-  {site:"Pelícano C – Punta Carnero", sow:"15 de cada mes", size:"25 MM", harvest:"02 al 04"},
-  {site:"MARCOR 2 – Ballenita", sow:"15 de cada mes", size:"50 MM", harvest:"01 al 03"}
-];
+// script.js — Menú móvil accesible y estable
+(function () {
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mainMenu');
+  if (!btn || !menu) return;
 
-function renderSchedule(){
-  const box = document.getElementById('schedule-list');
-  if(!box) return;
-  box.innerHTML = "";
-  harvests.forEach(h=>{
-    const el = document.createElement('div');
-    el.className = 'item';
-    el.innerHTML = `<h4>${h.site}</h4>
-      <div class="meta"><strong>Siembra:</strong> ${h.sow} · 
-      <strong>Tamaño:</strong> ${h.size} · 
-      <strong>Cosecha:</strong> ${h.harvest}</div>`;
-    box.appendChild(el);
+  // abrir/cerrar por click
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-}
-document.addEventListener('DOMContentLoaded', renderSchedule);
+
+  // cerrar si se hace click fuera
+  document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !btn.contains(e.target)) {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // reset si se cambia a escritorio
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 980) {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // cierre con tecla Esc
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.focus();
+    }
+  });
+})();
