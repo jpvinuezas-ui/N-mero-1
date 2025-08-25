@@ -29,3 +29,17 @@ nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 input,textarea{width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc;border-radius:8px}
 footer{text-align:center;padding:20px;color:var(--muted)}
+/* Reset responsive básico */
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+/* Hero de portada */
+.hero .bg { background: #00324d url('assets/hero_nauplio_bg.png') center/cover no-repeat; opacity:.5; }
+
+/* Tarjetas de servicios: foto con alto fijo y recorte */
+.service-card .img { height: 240px; background-size: cover; background-position: center; border-radius: 12px; }
+
+/* Logos dentro de tarjetas (para que no crezcan) */
+.service-card .logo { height: 46px; width: auto; }
+
+/* Galería: recorte uniforme */
+.gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
