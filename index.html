@@ -12,11 +12,11 @@
   <!-- NAV -->
   <nav>
     <div class="container nav-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Inicio MARCOR">
         <img src="assets/logo_maduracion.png" alt="MARCOR Maduración">
         <img src="assets/logo_larvicultura.png" alt="MARCOR Larvicultura">
       </a>
-      <button class="hamburger">☰</button>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <div class="menu">
         <a href="maduracion.html">Maduración</a>
         <a href="larvicultura.html">Larvicultura</a>
@@ -28,7 +28,7 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="bg"></div>
+    <div class="bg" aria-hidden="true"></div>
     <div class="container hero-inner">
       <span class="badge"><img class="icon" src="assets/icon_nauplio5.svg" alt=""> Cadena integrada</span>
       <h1>MARCOR</h1>
@@ -45,18 +45,25 @@
     <section id="servicios" class="section">
       <div class="container">
         <h2>Nuestros Servicios</h2>
+
         <div class="services">
+          <!-- MADURACIÓN -->
           <article class="service-card card">
-            <a href="maduracion.html" class="img" style="background-image:url('assets/serv_maduracion.png')"></a>
-            <img src="assets/logo_maduracion.png" class="logo" alt="">
-            <h3>Maduración — Nauplios</h3>
+            <div class="img">
+              <img src="assets/serv_maduracion.png" alt="Tanques de Maduración — MARCOR">
+            </div>
+            <img src="assets/logo_maduracion.png" class="logo" alt="Logo MARCOR Maduración">
+            <h3><a href="maduracion.html">Maduración — Nauplios</a></h3>
             <p>Producción controlada de nauplios con protocolos de sanidad y trazabilidad.</p>
           </article>
 
+          <!-- LARVICULTURA -->
           <article class="service-card card">
-            <a href="larvicultura.html" class="img" style="background-image:url('assets/serv_larvicultura.png')"></a>
-            <img src="assets/logo_larvicultura.png" class="logo" alt="">
-            <h3>Larvicultura — Post Larvas</h3>
+            <div class="img">
+              <img src="assets/serv_larvicultura.png" alt="Larvicultura — MARCOR">
+            </div>
+            <img src="assets/logo_larvicultura.png" class="logo" alt="Logo MARCOR Larvicultura">
+            <h3><a href="larvicultura.html">Larvicultura — Post Larvas</a></h3>
             <p>Desarrollo larvario con manejo nutricional y seguimiento de indicadores.</p>
           </article>
         </div>
@@ -67,17 +74,17 @@
     <section id="procesos" class="section">
       <div class="container process-grid">
         <div class="card">
-          <h2>Procesos & Bioseguridad</h2>
-          <div class="step"><div class="num">1</div>Ingreso & trazabilidad</div>
+          <h2>Procesos &amp; Bioseguridad</h2>
+          <div class="step"><div class="num">1</div>Ingreso &amp; trazabilidad</div>
           <div class="step"><div class="num">2</div>Ambiente controlado</div>
-          <div class="step"><div class="num">3</div>Nutrición & manejo</div>
+          <div class="step"><div class="num">3</div>Nutrición &amp; manejo</div>
           <div class="step"><div class="num">4</div>Monitoreo</div>
-          <div class="step"><div class="num">5</div>Pre-entrega</div>
+          <div class="step"><div class="num">5</div>Pre‑entrega</div>
         </div>
         <div class="gallery">
-          <img src="assets/foto_aclimatacion.png" alt="">
-          <img src="assets/foto_diagnostico.png" alt="">
-          <img src="assets/serv_maduracion.png" alt="">
+          <img src="assets/foto_aclimatacion.png" alt="Aclimatación de post larvas">
+          <img src="assets/foto_diagnostico.png" alt="Diagnóstico">
+          <img src="assets/serv_maduracion.png" alt="Maduración">
         </div>
       </div>
     </section>
@@ -85,25 +92,30 @@
     <!-- CONTACTO -->
     <section id="contacto" class="section">
       <div class="container contact-grid">
-        <form name="contacto" method="POST" data-netlify="true" class="card">
+        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="campo-extra" class="card">
           <input type="hidden" name="form-name" value="contacto">
-          <h2>Contacto & Cotizaciones</h2>
+          <p style="display:none"><label>Si eres humano, deja este campo vacío: <input name="campo-extra"></label></p>
+          <h2>Contacto &amp; Cotizaciones</h2>
           <label>Nombre <input name="nombre" required></label>
           <label>Email <input name="email" type="email" required></label>
-          <label>Mensaje <textarea name="mensaje"></textarea></label>
-          <button class="btn">Enviar</button>
+          <label>Teléfono <input name="telefono" placeholder="+593 ..."></label>
+          <label>Mensaje <textarea name="mensaje" rows="5"></textarea></label>
+          <button class="btn" type="submit">Enviar</button>
         </form>
         <div class="card">
           <h3>Atención Comercial</h3>
-          <p>Email: ventas@marcor.ec<br>
-             WhatsApp: +593 00 000 0000<br>
+          <p>Email: <a href="mailto:ventas@marcor.ec">ventas@marcor.ec</a><br>
+             WhatsApp: <a href="https://wa.me/0000000000" target="_blank" rel="noopener">+593 00 000 0000</a><br>
              Ubicación: Ecuador</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="section tight"><div class="container">© 2025 MARCOR</div></footer>
+  <footer class="section tight">
+    <div class="container">© 2025 MARCOR · Contigo en cada etapa</div>
+  </footer>
+
   <script src="script.js" defer></script>
 </body>
 </html>
