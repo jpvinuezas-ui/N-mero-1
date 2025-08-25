@@ -94,3 +94,10 @@ footer{border-top:1px solid var(--line);color:#6b87a0}
     background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;box-shadow:var(--shadow)
   }
 }
+/* Servicios: ahora la imagen es <img>, no background */
+.service-card .img { border-radius:12px; overflow:hidden; }
+.service-card .img img { width:100%; height:240px; object-fit:cover; display:block; }
+
+/* Enlaces del título (para que se note que son clicables) */
+.service-card h3 a { color: inherit; text-decoration: none; }
+.service-card h3 a:hover { text-decoration: underline; }
