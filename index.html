@@ -3,18 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MARCOR — Contigo en cada etapa</title>
-  <meta name="description" content="MARCOR: cadena integrada desde maduración de nauplios hasta larvicultura de post larvas.">
+  <title>MARCOR — Nauplios y Post Larvas | Laboratorios Marcor</title>
+  <meta name="description" content="MARCOR: cadena integrada de maduración (nauplios) y larvicultura (post larvas) con enfoque en calidad, bioseguridad y trazabilidad. Contigo en cada etapa.">
   <link rel="icon" href="assets/logo_larvicultura.png">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO/OG básico -->
+  <meta property="og:title" content="MARCOR — Contigo en cada etapa">
+  <meta property="og:description" content="Nauplios y Post Larvas con protocolos de sanidad y trazabilidad.">
+  <meta property="og:image" content="assets/hero_nauplio_bg.png">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://laboratoriosmarcor.com/">
+
+  <!-- Datos estructurados mínimos -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"MARCOR",
+    "url":"https://laboratoriosmarcor.com/",
+    "logo":"https://laboratoriosmarcor.com/assets/logo_larvicultura.png",
+    "sameAs":[]
+  }
+  </script>
 </head>
 <body>
+  <!-- NAV -->
   <nav>
     <div class="container nav-inner">
-      <div class="brand-logos">
-        <img src="assets/logo_maduracion.png" alt="MARCOR Maduración">
-        <img src="assets/logo_larvicultura.png" alt="MARCOR Laboratorio de Larvas">
-      </div>
+      <a class="brand" href="#top" aria-label="Inicio MARCOR">
+        <!-- Deja uno o ambos logos. Se ajustan por CSS -->
+        <img src="assets/logo_maduracion.png" alt="Logo MARCOR Maduración">
+        <img src="assets/logo_larvicultura.png" alt="Logo MARCOR Laboratorio de Larvas">
+      </a>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <div class="menu">
         <a href="#servicios">Servicios</a>
         <a href="#procesos">Procesos</a>
@@ -24,10 +46,14 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="bg"></div>
-    <div class="container">
-      <span class="badge"><img class="icon" src="assets/icon_nauplio5.svg" alt=""> Cadena integrada</span>
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <span class="badge">
+        <img class="icon" src="assets/icon_nauplio5.svg" alt="Ícono nauplio">
+        Cadena integrada
+      </span>
       <h1>MARCOR</h1>
       <p><strong>Contigo en cada etapa</strong> — de Nauplios a Post Larvas</p>
       <div class="cta">
@@ -38,80 +64,96 @@
   </header>
 
   <main>
-    <!-- Servicios -->
+    <!-- SERVICIOS -->
     <section id="servicios" class="section">
       <div class="container">
         <h2>Nuestros Servicios</h2>
         <div class="services">
           <article class="service-card card">
-            <div class="img" style="background-image:url('assets/serv_maduracion.png')"></div>
+            <div class="img" style="background-image:url('assets/serv_maduracion.png')" role="img" aria-label="Maduración de nauplios"></div>
             <img src="assets/logo_maduracion.png" alt="MARCOR Maduración" class="logo">
             <h3>Maduración — Nauplios</h3>
             <p>Producción controlada de nauplios con protocolos de sanidad y trazabilidad.</p>
-            <img src="assets/icon_nauplio5.svg" alt="Ícono Nauplio 5" width="44">
+            <img src="assets/icon_nauplio5.svg" alt="Ícono Nauplio 5" class="mini-icon">
           </article>
 
           <article class="service-card card">
-            <div class="img" style="background-image:url('assets/serv_larvicultura.png')"></div>
+            <div class="img" style="background-image:url('assets/serv_larvicultura.png')" role="img" aria-label="Larvicultura de post larvas"></div>
             <img src="assets/logo_larvicultura.png" alt="MARCOR Laboratorio de Larvas" class="logo">
             <h3>Larvicultura — Post Larvas</h3>
             <p>Desarrollo larvario con manejo nutricional y seguimiento de indicadores.</p>
-            <img src="assets/icon_mysis3.svg" alt="Ícono Mysis 3" width="44">
+            <img src="assets/icon_mysis3.svg" alt="Ícono Mysis 3" class="mini-icon">
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Procesos -->
+    <!-- PROCESOS -->
     <section id="procesos" class="section">
       <div class="container process-grid">
         <div class="card">
-          <h2>Procesos & Bioseguridad</h2>
-          <div class="step"><div class="num">1</div><div>Ingreso & Trazabilidad</div></div>
-          <div class="step"><div class="num">2</div><div>Ambiente controlado</div></div>
-          <div class="step"><div class="num">3</div><div>Nutrición & Manejo</div></div>
-          <div class="step"><div class="num">4</div><div>Monitoreo continuo</div></div>
-          <div class="step"><div class="num">5</div><div>Pre-entrega</div></div>
+          <h2>Procesos &amp; Bioseguridad</h2>
+          <div class="step"><div class="num">1</div><div><strong>Ingreso &amp; trazabilidad</strong> de reproductores/larvas y parámetros iniciales.</div></div>
+          <div class="step"><div class="num">2</div><div><strong>Ambiente controlado</strong> (agua, fotoperíodo y densidades por protocolo).</div></div>
+          <div class="step"><div class="num">3</div><div><strong>Nutrición &amp; manejo</strong> según objetivos del ciclo.</div></div>
+          <div class="step"><div class="num">4</div><div><strong>Monitoreo</strong> de indicadores y reportes técnicos.</div></div>
+          <div class="step"><div class="num">5</div><div><strong>Pre‑entrega</strong> con chequeo de calidad y coordinación logística.</div></div>
         </div>
         <div class="gallery">
-          <img src="assets/foto_aclimatacion.png" alt="Aclimatación">
-          <img src="assets/foto_diagnostico.png" alt="Diagnóstico">
-          <img src="assets/serv_maduracion.png" alt="Maduración">
+          <img src="assets/foto_aclimatacion.png" alt="Aclimatación de post larvas">
+          <img src="assets/foto_diagnostico.png" alt="Diagnóstico molecular de reproductores">
+          <img src="assets/serv_maduracion.png" alt="Tanques de maduración">
         </div>
       </div>
     </section>
 
-    <!-- Agenda -->
+    <!-- AGENDA -->
     <section id="agenda" class="section">
       <div class="container">
-        <h2>Agenda de Siembras & Cosechas</h2>
+        <h2>Agenda de Siembras &amp; Cosechas</h2>
         <div id="schedule-list" class="schedule"></div>
-        <div class="card">
-          <strong>Poster oficial:</strong><br>
-          <img src="assets/poster_agenda.png" alt="Poster de agenda" style="width:100%">
+        <div class="card poster">
+          <strong>Poster oficial (referencia)</strong>
+          <img src="assets/poster_agenda.png" alt="Fechas de siembra y cosecha MARCOR">
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- CONTACTO -->
     <section id="contacto" class="section">
       <div class="container contact-grid">
-        <form id="contacto-form" name="contacto" method="POST" data-netlify="true" class="card">
+        <form id="contacto-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="campo-extra" class="card">
           <input type="hidden" name="form-name" value="contacto">
-          <h2>Contacto & Cotizaciones</h2>
+          <p style="display:none"><label>Si eres humano, deja este campo vacío: <input name="campo-extra"></label></p>
+          <h2>Contacto &amp; Cotizaciones</h2>
           <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" required>
+          <input id="nombre" name="nombre" required placeholder="Tu nombre">
           <label for="email">Email</label>
-          <input id="email" type="email" name="email" required>
+          <input id="email" type="email" name="email" required placeholder="tucorreo@empresa.com">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" placeholder="+593 ...">
+          <label for="interes">Interés principal</label>
+          <select id="interes" name="interes">
+            <option>Nauplios (Maduración)</option>
+            <option>Post Larvas (Larvicultura)</option>
+            <option>Ambos</option>
+          </select>
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje"></textarea>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos especie, tiempos, ubicación…"></textarea>
           <button class="btn" type="submit">Enviar</button>
+          <small class="help">Este formulario usa Netlify Forms. Verás los envíos en tu panel.</small>
         </form>
-        <div class="card">
+
+        <div class="card info">
           <h3>Atención Comercial</h3>
-          <p><strong>Email:</strong> ventas@marcor.ec<br>
-             <strong>WhatsApp:</strong> +593 00 000 0000<br>
+          <p><strong>Email:</strong> <a href="mailto:ventas@marcor.ec">ventas@marcor.ec</a><br>
+             <strong>WhatsApp:</strong> <a href="https://wa.me/0000000000" target="_blank" rel="noopener">+593 00 000 0000</a><br>
              <strong>Ubicación:</strong> Ecuador</p>
+          <p><strong>Horario:</strong> L–V 08:00–17:30</p>
+          <p class="logos-inline">
+            <img src="assets/logo_larvicultura.png" alt="MARCOR Larvicultura">
+            <img src="assets/logo_maduracion.png" alt="MARCOR Maduración">
+          </p>
         </div>
       </div>
     </section>
