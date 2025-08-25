@@ -86,3 +86,4 @@ footer{border-top:1px solid var(--line);color:#6b87a0}
   .hamburger:focus + .menu,
   .hamburger:hover + .menu{display:flex;flex-direction:column;gap:12px;position:absolute;top:58px;right:4%;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;box-shadow:var(--shadow)}
 }
+.hero .bg { background:#00324d url('assets/hero_nauplio_bg.png') center/cover no-repeat; }
