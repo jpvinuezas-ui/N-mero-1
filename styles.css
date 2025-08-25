@@ -86,13 +86,30 @@ footer{border-top:1px solid var(--line);color:#6b87a0}
   .menu{display:none}
   .hamburger{display:block}
 }
-/* Menú móvil sencillo (sin JS extra) */
-@media (max-width: 980px){
-  .hamburger:focus + .menu,
-  .hamburger:hover + .menu{
-    display:flex;flex-direction:column;gap:12px;position:absolute;top:58px;right:4%;
-    background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;box-shadow:var(--shadow)
+/* Desktop: menú visible en línea */
+.menu{display:flex;align-items:center;gap:18px}
+
+/* Móvil: oculto por defecto y se abre con .open */
+@media (max-width:980px){
+  .menu{
+    display:none;
   }
+  .menu.open{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    position:absolute;
+    top:58px;           /* ajusta si tu header es más alto */
+    right:4%;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:12px;
+    box-shadow:var(--shadow);
+    z-index:50;
+    min-width: 220px;
+  }
+  .hamburger{display:block}
 }
 /* Servicios: ahora la imagen es <img>, no background */
 .service-card .img { border-radius:12px; overflow:hidden; }
