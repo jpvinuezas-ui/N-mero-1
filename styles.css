@@ -79,3 +79,9 @@ footer{text-align:center;color:var(--muted)}
   .hamburger{display:block}
   .brand img{height:32px}
 }
+/* LOGOS en el header: siempre en línea, sin apilar */
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+.brand-logo{height:36px; width:auto; display:block}
+@media (max-width:980px){
+  .brand-logo{height:32px}
+}
