@@ -1,4 +1,4 @@
-// ===== Menú móvil =====
+// ===== Menú móvil (con z-index alto y cierre fuera) =====
 (function () {
   const btn = document.getElementById('menuBtn');
   const menu = document.getElementById('mainMenu');
