@@ -3,85 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Larvicultura — Agenda | MARCOR</title>
+  <title>Larvicultura — Agenda y Procesos | MARCOR</title>
+  <meta name="description" content="Agenda de siembras y cosechas de post larvas. Procesos y bioseguridad de larvicultura MARCOR.">
   <link rel="icon" href="assets/logo_larvicultura.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><img src="assets/logo_larvicultura.png" alt=""></a>
-      <div class="menu">
+      <a class="brand" href="index.html"><img src="assets/logo_maduracion.png" alt=""><img src="assets/logo_larvicultura.png" alt=""></a>
+      <button class="hamburger" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="menu" id="mainMenu">
         <a href="maduracion.html">Maduración</a>
         <a href="larvicultura.html">Larvicultura</a>
+        <a href="index.html#procesos">Procesos</a>
         <a href="index.html#contacto" class="btn">Cotizar</a>
       </div>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero hero--sm">
+    <div class="bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <h1>Agenda de Siembras & Cosechas</h1>
+      <h1>Agenda de Siembras &amp; Cosechas</h1>
       <p>Calendario operativo de post larvas</p>
     </div>
   </header>
 
-  <main class="section">
-  <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Base</th>
-          <th>Siembra</th>
-          <th>Cosecha</th>
-          <th>Cantidad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Marcor 1A</td>
-          <td>07 de cada mes</td>
-          <td>22–24 de cada mes</td>
-          <td>70 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Marcor 1B</td>
-          <td>28 de cada mes</td>
-          <td>16–18 de cada mes</td>
-          <td>70 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Pelícano A</td>
-          <td>21 de cada mes</td>
-          <td>09–10 de cada mes</td>
-          <td>25 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Pelícano B</td>
-          <td>21 de cada mes</td>
-          <td>09–10 de cada mes</td>
-          <td>35 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Pelícano C</td>
-          <td>15 de cada mes</td>
-          <td>02–03 de cada mes</td>
-          <td>25 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Marcor 2</td>
-          <td>15 de cada mes</td>
-          <td>01–03 de cada mes</td>
-          <td>50 MM nauplios</td>
-        </tr>
-      </tbody>
-    </table>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <div class="table-wrap">
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th>Base</th><th>Siembra</th><th>Cosecha</th><th>Cantidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Marcor 1A</td><td>07 de cada mes</td><td>22–24 de cada mes</td><td>70 MM nauplios</td></tr>
+                <tr><td>Marcor 1B</td><td>28 de cada mes</td><td>16–18 de cada mes</td><td>70 MM nauplios</td></tr>
+                <tr><td>Pelícano A</td><td>21 de cada mes</td><td>09–10 de cada mes</td><td>25 MM nauplios</td></tr>
+                <tr><td>Pelícano B</td><td>21 de cada mes</td><td>09–10 de cada mes</td><td>35 MM nauplios</td></tr>
+                <tr><td>Pelícano C</td><td>15 de cada mes</td><td>02–03 de cada mes</td><td>25 MM nauplios</td></tr>
+                <tr><td>Marcor 2</td><td>15 de cada mes</td><td>01–03 de cada mes</td><td>50 MM nauplios</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-    <div class="card poster" style="margin-top:20px">
-      <img src="assets/poster_agenda.png" alt="Poster oficial">
-    </div>
-  </div>
-</main>
+        <img class="banner" src="assets/banner_marcor.png" alt="MARCOR">
+      </div>
+    </section>
+  </main>
 
   <footer class="section tight"><div class="container">© 2025 MARCOR</div></footer>
   <script src="script.js" defer></script>
