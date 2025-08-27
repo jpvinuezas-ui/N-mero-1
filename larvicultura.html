@@ -44,55 +44,25 @@
 
         <!-- Tabla de Agenda -->
         <div class="table-wrap">
-          <table class="tabla">
-            <thead>
-              <tr>
-                <th>Base</th>
-                <th>Siembra</th>
-                <th>Cosecha</th>
-                <th>Cantidad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Marcor 1A</td>
-                <td>07 de cada mes</td>
-                <td>22–24 de cada mes</td>
-                <td>70 MM nauplios</td>
-              </tr>
-              <tr>
-                <td>Marcor 1B</td>
-                <td>28 de cada mes</td>
-                <td>16–18 de cada mes</td>
-                <td>70 MM nauplios</td>
-              </tr>
-              <tr>
-                <td>Pelícano A</td>
-                <td>21 de cada mes</td>
-                <td>09–10 de cada mes</td>
-                <td>25 MM nauplios</td>
-              </tr>
-              <tr>
-                <td>Pelícano B</td>
-                <td>21 de cada mes</td>
-                <td>09–10 de cada mes</td>
-                <td>35 MM nauplios</td>
-              </tr>
-              <tr>
-                <td>Pelícano C</td>
-                <td>15 de cada mes</td>
-                <td>02–03 de cada mes</td>
-                <td>25 MM nauplios</td>
-              </tr>
-              <tr>
-                <td>Marcor 2</td>
-                <td>15 de cada mes</td>
-                <td>01–03 de cada mes</td>
-                <td>50 MM nauplios</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <table class="tabla" id="tabla-larvicultura">
+    <thead>
+      <tr>
+        <th>Base</th>
+        <th>Siembra</th>
+        <th>Cosecha</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Se rellena automáticamente con data/larvicultura_tabla.json -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Botón de descarga de agenda (PDF) -->
+<p style="margin-top:10px">
+  <a class="btn" href="assets/poster_agenda.pdf" target="_blank" rel="noopener">Descargar agenda (PDF)</a>
+</p>
 
         <!-- Imagen inferior -->
         <figure class="card" style="margin-top:16px">
