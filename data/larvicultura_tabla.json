@@ -1,0 +1,50 @@
+[
+  {
+    "base": "Marcor 1A",
+    "siembra": "07 de cada mes",
+    "cosecha": "22–24 de cada mes",
+    "cantidad": "70 MM nauplios",
+    "ubicacion": "—",
+    "map_url": ""
+  },
+  {
+    "base": "Marcor 1B",
+    "siembra": "28 de cada mes",
+    "cosecha": "16–18 de cada mes",
+    "cantidad": "70 MM nauplios",
+    "ubicacion": "—",
+    "map_url": ""
+  },
+  {
+    "base": "Pelícano A",
+    "siembra": "21 de cada mes",
+    "cosecha": "09–10 de cada mes",
+    "cantidad": "25 MM nauplios",
+    "ubicacion": "—",
+    "map_url": ""
+  },
+  {
+    "base": "Pelícano B",
+    "siembra": "21 de cada mes",
+    "cosecha": "09–10 de cada mes",
+    "cantidad": "35 MM nauplios",
+    "ubicacion": "—",
+    "map_url": ""
+  },
+  {
+    "base": "Pelícano C",
+    "siembra": "15 de cada mes",
+    "cosecha": "02–03 de cada mes",
+    "cantidad": "25 MM nauplios",
+    "ubicacion": "—",
+    "map_url": ""
+  },
+  {
+    "base": "Marcor 2",
+    "siembra": "15 de cada mes",
+    "cosecha": "01–03 de cada mes",
+    "cantidad": "50 MM nauplios",
+    "ubicacion": "—",
+    "map_url": ""
+  }
+]
