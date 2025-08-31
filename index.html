@@ -1,123 +1,337 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MARCOR — Nauplios y Post Larvas</title>
-  <meta name="description" content="MARCOR: cadena integrada de maduración (nauplios) y larvicultura (post larvas) con calidad y trazabilidad.">
-  <link rel="icon" href="assets/logo_larvicultura.png">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARCOR - Acuicultura de Camarón | Contigo en cada etapa</title>
+    <meta name="description" content="MARCOR - Líder en acuicultura de camarón. Servicios de maduración (nauplios) y larvicultura (post larvas). Contigo en cada etapa del proceso.">
+    <link rel="icon" type="image/png" href="/assets/logo_larvicultura.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MARCOR - Acuicultura de Camarón">
+    <meta property="og:description" content="Líder en acuicultura de camarón. Servicios de maduración y larvicultura de alta calidad.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/logo_larvicultura.png">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- NAV -->
-  <nav>
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="Inicio MARCOR">
-        <img src="assets/logo_maduracion.png" alt="MARCOR Maduración">
-        <img src="assets/logo_larvicultura.png" alt="MARCOR Larvicultura">
-      </a>
-      <button class="hamburger" id="menuBtn" aria-label="Abrir menú" aria-controls="mainMenu" aria-expanded="false">☰</button>
-
-<div class="menu" id="mainMenu">
-  <a href="maduracion.html">Maduración</a>
-  <a href="larvicultura.html">Larvicultura</a>
-  <a href="#procesos">Procesos</a>
-  <a href="#contacto" class="btn">Cotizar</a>
-</div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero">
-    <div class="bg" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <span class="badge"><img class="icon" src="assets/icon_nauplio5.svg" alt=""> Cadena integrada</span>
-      <h1>MARCOR</h1>
-      <p><strong>Contigo en cada etapa</strong> — de Nauplios a Post Larvas</p>
-      <div class="cta">
-        <a class="btn" href="#contacto">Solicitar cotización</a>
-        <a class="btn ghost" href="larvicultura.html">Ver larvicultura</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- SERVICIOS -->
-    <section id="servicios" class="section">
-      <div class="container">
-        <h2>Nuestros Servicios</h2>
-
-        <div class="services">
-          <!-- MADURACIÓN -->
-          <article class="service-card card">
-            <div class="img">
-              <img src="assets/serv_maduracion.png" alt="Tanques de Maduración — MARCOR">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand-logos">
+                    <img src="/marcor_barraa.svg" alt="MARCOR" class="logo-marcor">
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="/maduracion.html" class="nav-link">Maduración</a>
+                    <a href="/larvicultura.html" class="nav-link">Larvicultura</a>
+                    <a href="/procesos.html" class="nav-link">Procesos</a>
+                    <a href="#cotizar" class="btn btn-primary btn-sm">Cotizar</a>
+                </nav>
+                
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
             </div>
-            <img src="assets/logo_maduracion.png" class="logo" alt="Logo MARCOR Maduración">
-            <h3><a href="maduracion.html">Maduración — Nauplios</a></h3>
-            <p>Producción controlada de nauplios con protocolos de sanidad y trazabilidad.</p>
-          </article>
-
-          <!-- LARVICULTURA -->
-          <article class="service-card card">
-            <div class="img">
-              <img src="assets/serv_larvicultura.png" alt="Larvicultura — MARCOR">
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="nav-mobile" id="mobileNav">
+            <div class="nav-mobile-content">
+                <a href="/maduracion.html" class="nav-link-mobile">Maduración</a>
+                <a href="/larvicultura.html" class="nav-link-mobile">Larvicultura</a>
+                <a href="/procesos.html" class="nav-link-mobile">Procesos</a>
+                <a href="#cotizar" class="btn btn-primary">Cotizar</a>
             </div>
-            <img src="assets/logo_larvicultura.png" class="logo" alt="Logo MARCOR Larvicultura">
-            <h3><a href="larvicultura.html">Larvicultura — Post Larvas</a></h3>
-            <p>Desarrollo larvario con manejo nutricional y seguimiento de indicadores.</p>
-          </article>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-fresh">
+        <div class="container">
+            <div class="hero-fresh-content">
+                <div class="hero-text-section">
+                    <h1 class="hero-title">
+                        Expertos en <span class="hero-highlight">Acuicultura</span>
+                    </h1>
+                    <p class="hero-description">
+                        Producimos nauplios y post larvas de camarón con los más altos estándares de calidad. 
+                        Tecnología avanzada y experiencia comprobada al servicio de tu granja.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#cotizar" class="hero-btn hero-btn-primary">Solicitar Cotización</a>
+                        <a href="/procesos.html" class="hero-btn hero-btn-outline">Ver Procesos</a>
+                    </div>
+                </div>
+                <div class="hero-visual-section">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <h2></h2>
+                            <span class="card-badge">Certificado</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="certification-logo">
+                            <img src="/globalgaplogo.png" alt="GlobalG.A.P. Certification" class="globalgap-logo">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- PROCESOS -->
-    <section id="procesos" class="section">
-      <div class="container process-grid">
-        <div class="card">
-          <h2>Procesos &amp; Bioseguridad</h2>
-          <div class="step"><div class="num">1</div>Ingreso &amp; trazabilidad</div>
-          <div class="step"><div class="num">2</div>Ambiente controlado</div>
-          <div class="step"><div class="num">3</div>Nutrición &amp; manejo</div>
-          <div class="step"><div class="num">4</div>Monitoreo</div>
-          <div class="step"><div class="num">5</div>Pre‑entrega</div>
+    <!-- Counters KPIs -->
+    <section class="counters-section">
+        <div class="container">
+            <div class="counters-grid">
+                <div class="counter-item">
+                    <div class="counter-number" data-target="265">0</div>
+                    <div class="counter-label">Larvicultura / mes</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="6">0</div>
+                    <div class="counter-label">Bases de larvicultura</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="75">0</div>
+                    <div class="counter-label">Nauplios / día</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="3">0</div>
+                    <div class="counter-label">Bases de maduración</div>
+                </div>
+            </div>
         </div>
-        <div class="gallery">
-          <img src="assets/foto_aclimatacion.png" alt="Aclimatación de post larvas">
-          <img src="assets/foto_diagnostico.png" alt="Diagnóstico">
-          <img src="assets/serv_maduracion.png" alt="Maduración">
-        </div>
-      </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="section">
-      <div class="container contact-grid">
-        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="campo-extra" class="card">
-          <input type="hidden" name="form-name" value="contacto">
-          <p style="display:none"><label>Si eres humano, deja este campo vacío: <input name="campo-extra"></label></p>
-          <h2>Contacto &amp; Cotizaciones</h2>
-          <label>Nombre <input name="nombre" required></label>
-          <label>Email <input name="email" type="email" required></label>
-          <label>Teléfono <input name="telefono" placeholder="+593 ..."></label>
-          <label>Mensaje <textarea name="mensaje" rows="5"></textarea></label>
-          <button class="btn" type="submit">Enviar</button>
-        </form>
-        <div class="card">
-          <h3>Atención Comercial</h3>
-          <p>Email: <a href="mailto:ventas@marcor.ec">ventas@marcor.ec</a><br>
-             WhatsApp: <a href="https://wa.me/0000000000" target="_blank" rel="noopener">+593 00 000 0000</a><br>
-             Ubicación: Ecuador</p>
+    <!-- Nuestros Servicios -->
+    <section class="services-section" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Nuestros Cultivos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/logo_maduracion.jpg" alt="MARCOR Maduración" width="300" height="225" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Maduración — Nauplios</h3>
+                    <p class="service-description">Producción especializada de nauplios de alta calidad con protocolos sanitarios estrictos y ambiente controlado.</p>
+                    <a href="/maduracion.html" class="btn btn-outline">Ver maduración</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/marcor_curvo_transparente.png" alt="MARCOR Larvicultura" loading="lazy">
+                    </div>
+                    <h3 class="service-title">Larvicultura — Post Larvas</h3>
+                    <p class="service-description">Crianza y desarrollo de post larvas con tecnología avanzada y monitoreo continuo de calidad.</p>
+                    <a href="/larvicultura.html" class="btn btn-outline">Ver larvicultura</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="section tight">
-    <div class="container">© 2025 MARCOR · Contigo en cada etapa</div>
-  </footer>
+    <!-- Procesos & Bioseguridad -->
+    <section class="processes-section" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Procesos & Bioseguridad</h2>
+            <div class="processes-summary">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Ingreso & Trazabilidad</h4>
+                    <p>Control exhaustivo desde el ingreso de organismos</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Ambiente Controlado</h4>
+                    <p>Condiciones óptimas de temperatura, salinidad y oxígeno</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Diagnóstico Molecular</h4>
+                    <p>Análisis genético y sanitario especializado</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Aclimatación</h4>
+                    <p>Proceso gradual de adaptación al nuevo ambiente</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="/procesos.html" class="btn btn-primary">Ver procesos</a>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js" defer></script>
+    <!-- Certificaciones & Noticias -->
+    <section class="certifications-news" data-reveal>
+        <div class="container">
+            <div class="content-grid">
+                <div class="certifications">
+                    <h3>Certificaciones</h3>
+                    <div class="badges">
+                        <div class="badge badge-active">
+                            <span class="badge-title">GlobalG.A.P.</span>
+                            <span class="badge-status">Vigente</span>
+                        </div>
+                        <div class="badge badge-process">
+                            <span class="badge-title">BAP</span>
+                            <span class="badge-status">En proceso</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+                    <h3>Noticias</h3>
+                    <div class="news-list">
+                        <article class="news-item">
+                            <time class="news-date">15 Ene 2025</time>
+                            <h4 class="news-title">Nueva expansión en bases de larvicultura</h4>
+                        </article>
+                        <article class="news-item">
+                            <time class="news-date">16 Dic 2024</time>
+                            <h4 class="news-title">Certificación GlobalG.A.P. aprobada exitosamente</h4>
+                        </article>
+                        <article class="news-item">
+                            <time class="news-date">20 Dic 2024</time>
+                            <h4 class="news-title">Implementación de nuevos protocolos sanitarios</h4>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials-section" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial">
+                    <p>"Excelente crecimiento en laboratorio"</p>
+                    <cite>
+                        <strong>Nahum Espinoza</strong><br>
+                        Laboratorio Deones, Mar Bravo
+                    </cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"Excelentes resultados en campo, muy buen nauplio"</p>
+                    <cite>
+                        <strong>Antonio Mera</strong><br>
+                        Laboratorio Larmega, Manabí
+                    </cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"Tenemos 5 años trabajando con MARCOR, tiene buen crecimiento y ha sido estable en los despachos durante todo ese tiempo."</p>
+                    <cite>
+                        <strong>Wang Fen</strong><br>
+                        Grupo Heng Xin, El Oro
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto & Cotización -->
+    <section class="contact-section" id="cotizar" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Contacto & Cotización</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Solicita tu cotización</h3>
+                    <p>Completa el formulario y te contactaremos en las próximas 24 horas para brindarte una cotización personalizada.</p>
+                    
+                    <div class="whatsapp-cta">
+                        <a href="https://wa.me/XXXXXXXXXXX?text=Hola%20MARCOR,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" 
+                           class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            Escríbenos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono (opcional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Servicio de interés *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="larvicultura">Larvicultura</option>
+                            <option value="maduracion">Maduración</option>
+                            <option value="ambos">Ambos servicios</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Enviar cotización</button>
+                </form>
+            </div>
+            
+            <div class="privacy-notice">
+                <p><small>Al enviar este formulario, aceptas que MARCOR procese tus datos personales únicamente para responder a tu solicitud. No compartimos tu información con terceros.</small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <h5 style="color: var(--accent-light); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-bold);">Maduración</h5>
+                        <p style="margin: 0; font-size: var(--font-size-xs);">Tel: <a href="tel:+593990874901" style="color: inherit; text-decoration: none;">+593990874901</a><br>
+                        Email: <a href="mailto:maduracion@laboratoriosmarcor.com" style="color: inherit; text-decoration: none;">maduracion@laboratoriosmarcor.com</a></p>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--accent-light); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-bold);">Larvicultura</h5>
+                        <p style="margin: 0; font-size: var(--font-size-xs);">Tel: <a href="tel:+593996159119" style="color: inherit; text-decoration: none;">+593996159119</a><br>
+                        Email: <a href="mailto:administracion@laboratoriosmarcor.com" style="color: inherit; text-decoration: none;">administracion@laboratoriosmarcor.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="/maduracion.html">Maduración</a></li>
+                        <li><a href="/larvicultura.html">Larvicultura</a></li>
+                        <li><a href="/procesos.html">Procesos</a></li>
+                        <li><a href="#cotizar">Cotizar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes sociales</h4>
+                    <div class="social-links">
+                        <a href="https://m.facebook.com/LaboratorioMarcor/" target="_blank" rel="noopener">Facebook</a>
+                        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Aviso de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> MARCOR. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

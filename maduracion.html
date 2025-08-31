@@ -1,56 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maduración — Producción | MARCOR</title>
-  <link rel="icon" href="assets/logo_maduracion.png">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .table{width:100%;border-collapse:collapse;background:#fff}
-    .table th,.table td{padding:14px;border:1px solid #e6eef8;text-align:left}
-    .table th{background:#eef5ff;color:#0A56AA}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maduración - Nauplios | MARCOR</title>
+    <meta name="description" content="Servicio especializado de maduración y producción de nauplios de camarón. Reproductores certificados SPF con trazabilidad completa.">
+    <link rel="icon" type="image/png" href="/assets/logo_larvicultura.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <div class="container nav-inner">
-      <a class="brand" href="index.html"><img src="assets/logo_maduracion.png" alt=""></a>
-      <div class="menu">
-        <a href="maduracion.html">Maduración</a>
-        <a href="larvicultura.html">Larvicultura</a>
-        <a href="index.html#contacto" class="btn">Cotizar</a>
-      </div>
-    </div>
-  </nav>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand-logos">
+                    <img src="/marcor_barraa.svg" alt="MARCOR" class="logo-marcor">
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="/" class="nav-link">Inicio</a>
+                    <a href="/maduracion.html" class="nav-link active">Maduración</a>
+                    <a href="/larvicultura.html" class="nav-link">Larvicultura</a>
+                    <a href="/procesos.html" class="nav-link">Procesos</a>
+                    <a href="/#cotizar" class="btn btn-primary btn-sm">Cotizar</a>
+                </nav>
+                
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="nav-mobile" id="mobileNav">
+            <div class="nav-mobile-content">
+                <a href="/" class="nav-link-mobile">Inicio</a>
+                <a href="/maduracion.html" class="nav-link-mobile active">Maduración</a>
+                <a href="/larvicultura.html" class="nav-link-mobile">Larvicultura</a>
+                <a href="/procesos.html" class="nav-link-mobile">Procesos</a>
+                <a href="/#cotizar" class="btn btn-primary">Cotizar</a>
+            </div>
+        </nav>
+    </header>
 
-  <header class="hero">
-    <div class="container hero-inner">
-      <h1>Producción — Bases Mar Bravo</h1>
-      <p>Capacidad diaria instalada</p>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section class="page-hero" style="background-image: url('/FY1A2852.jpg'); background-size: cover; background-position: center 20%; background-repeat: no-repeat; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 43, 70, 0.7); z-index: 1;"></div>
+        <div class="container">
+            <div class="page-hero-content" style="position: relative; z-index: 2;">
+                <h1 class="page-title" style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);">Maduración — Nauplios</h1>
+                <p class="page-subtitle" style="color: white; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); font-size: var(--font-size-xl); margin-top: var(--spacing-lg);">Nauplios sin ablación de la mejor calidad</p>
+            </div>
+        </div>
+    </section>
 
-  <main class="section">
-    <div class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Base</th>
-            <th>Ubicación</th>
-            <th>Capacidad diaria</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Mar Bravo — Base A</td><td>Mar Bravo, Ecuador</td><td>25 MM nauplios/día</td></tr>
-          <tr><td>Mar Bravo — Base B</td><td>Mar Bravo, Ecuador</td><td>25 MM nauplios/día</td></tr>
-          <tr><td>Mar Bravo — Base C</td><td>Mar Bravo, Ecuador</td><td>25 MM nauplios/día</td></tr>
-        </tbody>
-      </table>
-      <p><strong>Total:</strong> 75 MM nauplios/día</p>
-    </div>
-  </main>
+    <!-- Tabla de Producción -->
+    <section class="production-section" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Capacidad de Producción</h2>
+            <div class="table-container">
+                <table class="production-table">
+                    <thead>
+                        <tr>
+                            <th>Base</th>
+                            <th>Ubicación</th>
+                            <th>Capacidad diaria</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los datos de la tabla pueden ser editados aquí por el negocio -->
+                        <tr>
+                            <td data-label="Base">Base Maduración 1</td>
+                            <td data-label="Ubicación">Mar Bravo</td>
+                            <td data-label="Capacidad diaria">25 MM nauplios</td>
+                            <td data-label="Estado">Activa</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Base">Base Maduración 2</td>
+                            <td data-label="Ubicación">Mar Bravo</td>
+                            <td data-label="Capacidad diaria">25 MM nauplios</td>
+                            <td data-label="Estado">Activa</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Base">Base Maduración 3</td>
+                            <td data-label="Ubicación">Mar Bravo</td>
+                            <td data-label="Capacidad diaria">25 MM nauplios</td>
+                            <td data-label="Estado">Activa</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td data-label="Base"><strong>TOTAL</strong></td>
+                            <td data-label="Ubicación">-</td>
+                            <td data-label="Capacidad diaria"><strong>75 MM nauplios/día</strong></td>
+                            <td data-label="Estado">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="production-note">
+                <p><strong>Nota:</strong> La capacidad puede variar según condiciones ambientales y disponibilidad de reproductores. Consulte disponibilidad actual.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer class="section tight"><div class="container">© 2025 MARCOR</div></footer>
+    <!-- Ubicaciones de Bases de Maduración -->
+    <section class="locations-section" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Ubicaciones de Nuestras Bases de Maduración</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h4>Base Maduración 1</h4>
+                    <p class="location-address">Mar Bravo<br>Guayas, Ecuador</p>
+                    <a href="https://maps.google.com/maps?q=-2.242583,-80.9525" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver en Google Maps</a>
+                </div>
+                <div class="location-card">
+                    <h4>Base Maduración 2</h4>
+                    <p class="location-address">Mar Bravo<br>Guayas, Ecuador</p>
+                    <a href="https://maps.google.com/maps?q=-2.268167,-80.927" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver en Google Maps</a>
+                </div>
+                <div class="location-card">
+                    <h4>Base Maduración 3</h4>
+                    <p class="location-address">Mar Bravo<br>Guayas, Ecuador</p>
+                    <a href="https://maps.app.goo.gl/JMDeubd37gB9oZ11A" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ver en Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características del Servicio -->
+    <section class="service-features" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Características de Nuestros Nauplios</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Reproductores Certificados</h4>
+                    <p>Selección genética rigurosa de reproductores libres de patógenos con trazabilidad completa.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Control de Calidad</h4>
+                    <p>Monitoreo continuo de parámetros físico-químicos y análisis microbiológicos en cada lote producido.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Ambiente Controlado</h4>
+                    <p>Sistemas automatizados de control de temperatura y oxígeno disuelto las 24 horas.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Bioseguridad Integral</h4>
+                    <p>Protocolos estrictos de desinfección, filtración UV y sistemas de cuarentena para prevenir contaminación.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Trazabilidad Completa</h4>
+                    <p>Registro detallado desde el origen de reproductores hasta la entrega, garantizando transparencia total.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Personal Capacitado</h4>
+                    <p>Equipo técnico especializado en acuicultura con formación continua en bioseguridad y manejo de reproductores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Cotización -->
+    <section class="cta-section" data-reveal>
+        <div class="container">
+            <div class="cta-content">
+                <h3>¿Necesitas nauplios de calidad superior?</h3>
+                <p>Solicita tu cotización personalizada para servicios de maduración</p>
+                <a href="#cotizar_maduracion" class="btn btn-primary btn-large">Solicitar cotización</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario local -->
+    <section class="contact-section" id="cotizar_maduracion" data-reveal>
+        <div class="container">
+            <h2 class="section-title">Cotización Maduración</h2>
+            <div class="contact-form-container">
+                <form class="contact-form" id="maduracionForm">
+                    <div class="form-group">
+                        <label for="mad_name">Nombre *</label>
+                        <input type="text" id="mad_name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mad_email">Correo electrónico *</label>
+                        <input type="email" id="mad_email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mad_phone">Teléfono (opcional)</label>
+                        <input type="tel" id="mad_phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="mad_service">Servicio</label>
+                        <select id="mad_service" name="service">
+                            <option value="maduracion" selected>Maduración</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mad_message">Detalles del proyecto</label>
+                        <textarea id="mad_message" name="message" rows="4" placeholder="Cantidad necesaria, fechas de entrega, ubicación de granja, etc..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Enviar cotización</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <h5 style="color: var(--accent-light); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-bold);">Maduración</h5>
+                        <p style="margin: 0; font-size: var(--font-size-xs);">Tel: <a href="tel:+593990874901" style="color: inherit; text-decoration: none;">+593990874901</a><br>
+                        Email: <a href="mailto:maduracion@laboratoriosmarcor.com" style="color: inherit; text-decoration: none;">maduracion@laboratoriosmarcor.com</a></p>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--accent-light); font-size: var(--font-size-sm); margin-bottom: var(--spacing-xs); font-weight: var(--font-weight-bold);">Larvicultura</h5>
+                        <p style="margin: 0; font-size: var(--font-size-xs);">Tel: <a href="tel:+593996159119" style="color: inherit; text-decoration: none;">+593996159119</a><br>
+                        Email: <a href="mailto:administracion@laboratoriosmarcor.com" style="color: inherit; text-decoration: none;">administracion@laboratoriosmarcor.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="/maduracion.html">Maduración</a></li>
+                        <li><a href="/larvicultura.html">Larvicultura</a></li>
+                        <li><a href="/procesos.html">Procesos</a></li>
+                        <li><a href="/#cotizar">Cotizar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes sociales</h4>
+                    <div class="social-links">
+                        <a href="https://m.facebook.com/LaboratorioMarcor/" target="_blank" rel="noopener">Facebook</a>
+                        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Aviso de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> MARCOR. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
