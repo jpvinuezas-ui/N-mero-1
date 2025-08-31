@@ -11,28 +11,28 @@
 <body>
   <!-- NAV -->
   <nav>
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="Inicio MARCOR">
-        <img src="assets/logo_maduracion.png" alt="MARCOR Maduración">
-        <img src="assets/logo_larvicultura.png" alt="MARCOR Larvicultura">
-      </a>
-      <button class="hamburger" id="menuBtn" aria-label="Abrir menú" aria-controls="mainMenu" aria-expanded="false">☰</button>
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Inicio MARCOR">
+      <img class="brand-logo" src="assets/logo_maduracion.png" alt="MARCOR Maduración">
+      <img class="brand-logo" src="assets/logo_larvicultura.png" alt="MARCOR Larvicultura">
+    </a>
 
-<div class="menu" id="mainMenu">
-  <a href="maduracion.html">Maduración</a>
-  <a href="larvicultura.html">Larvicultura</a>
-  <a href="#procesos">Procesos</a>
-  <a href="#contacto" class="btn">Cotizar</a>
-</div>
-      </div>
+    <button class="hamburger" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <div class="menu" id="mainMenu" role="menu">
+      <a href="maduracion.html" role="menuitem">Maduración</a>
+      <a href="larvicultura.html" role="menuitem">Larvicultura</a>
+      <a href="index.html#procesos" role="menuitem">Procesos</a>
+      <a href="index.html#contacto" class="btn" role="menuitem">Cotizar</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- HERO -->
   <header class="hero">
     <div class="bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <span class="badge"><img class="icon" src="assets/icon_nauplio5.svg" alt=""> Cadena integrada</span>
+      <span class="badge">Cadena integrada</span>
       <h1>MARCOR</h1>
       <p><strong>Contigo en cada etapa</strong> — de Nauplios a Post Larvas</p>
       <div class="cta">
@@ -42,29 +42,48 @@
     </div>
   </header>
 
+  <!-- KPIs -->
+  <section class="section reveal" aria-label="Indicadores">
+    <!-- Ejemplo de dos tarjetas en Home -->
+<div class="kpis">
+  <!-- Larvicultura -->
+  <div class="kpi">
+    <div class="num" data-key="larvicultura_mensual" data-suffix=" MM">0</div>
+    <div class="label">Larvicultura / mes</div>
+  </div>
+  <div class="kpi">
+    <div class="num" data-key="larvicultura_bases">0</div>
+    <div class="label">Bases de larvicultura</div>
+  </div>
+
+  <!-- Maduración -->
+  <div class="kpi">
+    <div class="num" data-key="maduracion_diaria" data-suffix=" MM">0</div>
+    <div class="label">Nauplios / día</div>
+  </div>
+  <div class="kpi">
+    <div class="num" data-key="maduracion_bases">0</div>
+    <div class="label">Bases de maduración</div>
+  </div>
+</div>
+  </section>
+
   <main>
     <!-- SERVICIOS -->
-    <section id="servicios" class="section">
+    <section id="servicios" class="section reveal">
       <div class="container">
         <h2>Nuestros Servicios</h2>
-
         <div class="services">
-          <!-- MADURACIÓN -->
-          <article class="service-card card">
-            <div class="img">
-              <img src="assets/serv_maduracion.png" alt="Tanques de Maduración — MARCOR">
-            </div>
-            <img src="assets/logo_maduracion.png" class="logo" alt="Logo MARCOR Maduración">
+          <article class="service-card card reveal">
+            <div class="img"><img src="assets/serv_maduracion.png" alt="Maduración"></div>
+            <img src="assets/logo_maduracion.png" class="logo" alt="">
             <h3><a href="maduracion.html">Maduración — Nauplios</a></h3>
             <p>Producción controlada de nauplios con protocolos de sanidad y trazabilidad.</p>
           </article>
 
-          <!-- LARVICULTURA -->
-          <article class="service-card card">
-            <div class="img">
-              <img src="assets/serv_larvicultura.png" alt="Larvicultura — MARCOR">
-            </div>
-            <img src="assets/logo_larvicultura.png" class="logo" alt="Logo MARCOR Larvicultura">
+          <article class="service-card card reveal">
+            <div class="img"><img src="assets/serv_larvicultura.png" alt="Larvicultura"></div>
+            <img src="assets/logo_larvicultura.png" class="logo" alt="">
             <h3><a href="larvicultura.html">Larvicultura — Post Larvas</a></h3>
             <p>Desarrollo larvario con manejo nutricional y seguimiento de indicadores.</p>
           </article>
@@ -73,7 +92,7 @@
     </section>
 
     <!-- PROCESOS -->
-    <section id="procesos" class="section">
+    <section id="procesos" class="section reveal">
       <div class="container process-grid">
         <div class="card">
           <h2>Procesos &amp; Bioseguridad</h2>
@@ -81,10 +100,10 @@
           <div class="step"><div class="num">2</div>Ambiente controlado</div>
           <div class="step"><div class="num">3</div>Nutrición &amp; manejo</div>
           <div class="step"><div class="num">4</div>Monitoreo</div>
-          <div class="step"><div class="num">5</div>Pre‑entrega</div>
+          <div class="step"><div class="num">5</div>Pre-entrega</div>
         </div>
-        <div class="gallery">
-          <img src="assets/foto_aclimatacion.png" alt="Aclimatación de post larvas">
+        <div class="gallery reveal">
+          <img src="assets/foto_aclimatacion.png" alt="Aclimatación">
           <img src="assets/foto_diagnostico.png" alt="Diagnóstico">
           <img src="assets/serv_maduracion.png" alt="Maduración">
         </div>
@@ -92,32 +111,27 @@
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto" class="section">
+    <section id="contacto" class="section reveal">
       <div class="container contact-grid">
-        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="campo-extra" class="card">
+        <form name="contacto" method="POST" data-netlify="true" class="card">
           <input type="hidden" name="form-name" value="contacto">
-          <p style="display:none"><label>Si eres humano, deja este campo vacío: <input name="campo-extra"></label></p>
-          <h2>Contacto &amp; Cotizaciones</h2>
+          <h2>Contacto & Cotizaciones</h2>
           <label>Nombre <input name="nombre" required></label>
           <label>Email <input name="email" type="email" required></label>
-          <label>Teléfono <input name="telefono" placeholder="+593 ..."></label>
-          <label>Mensaje <textarea name="mensaje" rows="5"></textarea></label>
-          <button class="btn" type="submit">Enviar</button>
+          <label>Mensaje <textarea name="mensaje"></textarea></label>
+          <button class="btn">Enviar</button>
         </form>
         <div class="card">
           <h3>Atención Comercial</h3>
-          <p>Email: <a href="mailto:ventas@marcor.ec">ventas@marcor.ec</a><br>
-             WhatsApp: <a href="https://wa.me/0000000000" target="_blank" rel="noopener">+593 00 000 0000</a><br>
+          <p>Email: ventas@marcor.ec<br>
+             WhatsApp: +593 00 000 0000<br>
              Ubicación: Ecuador</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="section tight">
-    <div class="container">© 2025 MARCOR · Contigo en cada etapa</div>
-  </footer>
-
+  <footer class="section tight"><div class="container">© 2025 MARCOR</div></footer>
   <script src="script.js" defer></script>
 </body>
 </html>

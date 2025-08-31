@@ -1,89 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Larvicultura — Agenda | MARCOR</title>
-  <link rel="icon" href="assets/logo_larvicultura.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARCOR - Larvicultura</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- NAV -->
   <nav>
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><img src="assets/logo_larvicultura.png" alt=""></a>
-      <div class="menu">
-        <a href="maduracion.html">Maduración</a>
-        <a href="larvicultura.html">Larvicultura</a>
-        <a href="index.html#contacto" class="btn">Cotizar</a>
+      <a class="brand" href="index.html" aria-label="Inicio MARCOR">
+        <img class="brand-logo" src="assets/logo_maduracion.png" alt="MARCOR Maduración">
+        <img class="brand-logo" src="assets/logo_larvicultura.png" alt="MARCOR Larvicultura">
+      </a>
+
+      <button class="hamburger" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <div class="menu" id="mainMenu" role="menu">
+        <a href="maduracion.html" role="menuitem">Maduración</a>
+        <a href="larvicultura.html" role="menuitem">Larvicultura</a>
+        <a href="index.html#procesos" role="menuitem">Procesos</a>
+        <a href="index.html#contacto" class="btn" role="menuitem">Cotizar</a>
       </div>
     </div>
   </nav>
 
+  <!-- HEADER -->
   <header class="hero">
-    <div class="container hero-inner">
-      <h1>Agenda de Siembras & Cosechas</h1>
-      <p>Calendario operativo de post larvas</p>
+    <div class="container center">
+      <h1>Larvicultura — Post Larvas</h1>
+      <p>Desarrollo larvario con manejo nutricional y seguimiento de indicadores.</p>
     </div>
   </header>
 
-  <main class="section">
-  <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Base</th>
-          <th>Siembra</th>
-          <th>Cosecha</th>
-          <th>Cantidad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Marcor 1A</td>
-          <td>07 de cada mes</td>
-          <td>22–24 de cada mes</td>
-          <td>70 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Marcor 1B</td>
-          <td>28 de cada mes</td>
-          <td>16–18 de cada mes</td>
-          <td>70 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Pelícano A</td>
-          <td>21 de cada mes</td>
-          <td>09–10 de cada mes</td>
-          <td>25 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Pelícano B</td>
-          <td>21 de cada mes</td>
-          <td>09–10 de cada mes</td>
-          <td>35 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Pelícano C</td>
-          <td>15 de cada mes</td>
-          <td>02–03 de cada mes</td>
-          <td>25 MM nauplios</td>
-        </tr>
-        <tr>
-          <td>Marcor 2</td>
-          <td>15 de cada mes</td>
-          <td>01–03 de cada mes</td>
-          <td>50 MM nauplios</td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- AGENDA -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Agenda de Siembras & Cosechas</h2>
+        <p>Calendario operativo de post larvas</p>
 
-    <div class="card poster" style="margin-top:20px">
-      <img src="assets/poster_agenda.png" alt="Poster oficial">
+        <!-- Tabla de Agenda -->
+        <div class="table-wrap">
+  <table class="tabla" id="tabla-larvicultura">
+    <thead>
+      <tr>
+        <th>Base</th>
+        <th>Siembra</th>
+        <th>Cosecha</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Se rellena automáticamente con data/larvicultura_tabla.json -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Botón de descarga de agenda (PDF) -->
+<p style="margin-top:10px">
+  <a class="btn" href="assets/poster_agenda.pdf" target="_blank" rel="noopener">Descargar agenda (PDF)</a>
+</p>
+
+        <!-- Imagen inferior -->
+        <figure class="card" style="margin-top:16px">
+          <img
+            class="banner"
+            src="assets/poster_agenda.png?v=2"
+            alt="Agenda MARCOR - Contigo en cada etapa"
+            width="1600"
+            height="900"
+          >
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container center">
+      <p>© 2025 MARCOR</p>
     </div>
-  </div>
-</main>
-
-  <footer class="section tight"><div class="container">© 2025 MARCOR</div></footer>
-  <script src="script.js" defer></script>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,23 @@
+[
+  {
+    "base": "Marcor 1A",
+    "capacidad_diaria": "25 MM",
+    "ubicacion": "Mar Bravo",
+    "observaciones": "Operación continua",
+    "map_url": ""
+  },
+  {
+    "base": "Marcor 1B",
+    "capacidad_diaria": "25 MM",
+    "ubicacion": "Mar Bravo",
+    "observaciones": "Redundancia sanitaria",
+    "map_url": ""
+  },
+  {
+    "base": "Marcor 2",
+    "capacidad_diaria": "25 MM",
+    "ubicacion": "Mar Bravo",
+    "observaciones": "Logística 24/7",
+    "map_url": ""
+  }
+]

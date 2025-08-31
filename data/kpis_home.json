@@ -1,0 +1,10 @@
+{
+  "larvicultura": {
+    "produccion_mensual_mm": 270,
+    "bases": 5
+  },
+  "maduracion": {
+    "produccion_diaria_mm": 75,
+    "bases": 3
+  }
+}
